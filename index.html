@@ -1,45 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu-Boletim</title>
 </head>
+
 <body>
-<select name="" id="materia">
-   <option value="matematica">Matemática</option>
-   <option value="portugues">Português</option>
-</select>
+    <select name="" id="materia">
+        <option value="matematica">Matemática</option>
+        <option value="portugues">Português</option>
+    </select>
 
-<input id="nota" type="number" placeholder="nota">
-<button onclick="cadastro()">Enviar</button>
+    <input id="nota" type="number" placeholder="nota">
+    <button onclick="cadastro()">Enviar</button>
 
-<div id="materias"></div>
-
-
+    <div id="materias"></div>
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-    
     <script>
-    
-    const materia = document.getElementById("materia");
-    const nota = document.getElementById("nota")
-    const materias = document.getElementById("materias")
-    function cadastro() {
+
+        const materia = document.getElementById("materia");
+        const nota = document.getElementById("nota")
+        const materias = document.getElementById("materias")
+        function cadastro() {
+        materias.innerHTML+= `<p> ${materia.value} </p>`
         
-    }
+        }
 
 
 
@@ -50,4 +40,5 @@
 
     </script>
 </body>
+
 </html>
