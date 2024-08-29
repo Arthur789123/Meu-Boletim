@@ -11,6 +11,7 @@
     <select name="" id="materia">
         <option value="matematica">Matemática</option>
         <option value="portugues">Português</option>
+        <option value="ciencia">Ciência</option>
     </select>
 
     <input id="nota" type="number" placeholder="nota">
@@ -24,11 +25,12 @@
     <script>
 
         const materia = document.getElementById("materia");
-        const nota = document.getElementById("nota")
-        const materias = document.getElementById("materias")
-        function cadastro() {
-        materias.innerHTML+= `<p> ${materia.value} </p>`
+        const nota = document.getElementById("nota");
+        const materias = document.getElementById("materias");
         
+        function cadastro() {
+            materias.innerHTML += `<p> ${materia.value} </p>`
+            materias.innerHTML += `<p> ${nota.value} </p>`
         }
 
 
