@@ -27,8 +27,18 @@
         const materia = document.getElementById("materia");
         const nota = document.getElementById("nota");
         const materias = document.getElementById("materias");
-        
+
         function cadastro() {
+            if  (nota.value > 11) {
+                return alert("não é possivel cadastrar essa nota")
+
+            }
+            
+            if   (nota.value < 0 ) {
+                return alert ("não é possivel cadastrar essa nota")
+            }
+               
+            
             materias.innerHTML += `<p> ${materia.value} </p>`
             materias.innerHTML += `<p> ${nota.value} </p>`
         }
